@@ -49,7 +49,6 @@ const phases = [
   {
     phase: "Phase 1",
     period: "FY26",
-    budget: "$100,000",
     title: "Core Infrastructure",
     deliverable:
       "Secure multi-performer asset repository, access controls, and version-locked environment and robot asset exchange.",
@@ -58,7 +57,6 @@ const phases = [
   {
     phase: "Phase 2",
     period: "FY27",
-    budget: "$360,000",
     title: "Standardization & Validation",
     deliverable:
       "Automated ingestion pipelines, standardized environment and robot validation, and policy compatibility checks.",
@@ -67,7 +65,6 @@ const phases = [
   {
     phase: "Phase 3",
     period: "FY28",
-    budget: "$1,340,000",
     title: "Authoritative Evaluation",
     deliverable:
       "Containerized evaluation, scoring, and audit-ready reporting across programs.",
@@ -410,12 +407,9 @@ export default function Home() {
                   <div className="mb-1 text-xs font-semibold uppercase tracking-widest text-cyan-400">
                     {p.phase} · {p.period}
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-slate-100">
+                  <h3 className="mb-4 text-xl font-bold text-slate-100">
                     {p.title}
                   </h3>
-                  <div className="mb-6 text-2xl font-mono font-bold text-slate-300">
-                    {p.budget}
-                  </div>
                   <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
                     Deliverable
                   </div>
@@ -430,15 +424,6 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="mt-8 rounded-xl border border-amber-400/20 bg-amber-950/20 p-6">
-              <p className="text-sm text-amber-200/80 leading-relaxed">
-                <span className="font-semibold text-amber-400">Sustainment: </span>
-                PI-ART is offered as a managed service. A sustainment budget on the order of{" "}
-                <span className="font-semibold">$10M over five years</span> supports accredited
-                cloud infrastructure, engineering staff, and operational support to ensure
-                continuity across programs.
-              </p>
-            </div>
           </div>
         </section>
 
